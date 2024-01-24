@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Calculator</title>
-  
+    <style>
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
 
@@ -51,6 +57,23 @@
     <button onclick="appendToDisplay('/')">/</button>
 </div>
 
+<script>
+    function appendToDisplay(value) {
+        document.getElementById('display').value += value;
+    }
+
+    function clearDisplay() {
+        document.getElementById('display').value = '';
+    }
+
+    function calculateResult() {
+        try {
+            document.getElementById('display').value = eval(document.getElementById('display').value);
+        } catch (error) {
+            document.getElementById('display').value = 'Error';
+        }
+    }
+</script>
 
 </body>
 </html>
