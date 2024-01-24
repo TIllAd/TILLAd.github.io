@@ -13,3 +13,17 @@ function calculateResult() {
         document.getElementById('display').value = 'Error';
     }
 }
+
+function euclid() {
+    
+    var num1 = parseInt(prompt("Enter the first number:"));
+    var num2 = parseInt(prompt("Enter the second number:"));
+
+    while (num2 !== 0) {
+        var temp = num2;
+        num2 = num1 % num2;
+        num1 = temp;
+    }
+
+    alert("The GCD is: " + num1);
+}
