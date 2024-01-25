@@ -13,101 +13,48 @@
 <a href="#tab2">Advanced Functions</a>
 <a href="#tab3">Login</a>
 
+<div class="tabs">
+    <button onclick="showTab('tab1')">Tab 1</button>
+    <button onclick="showTab('tab2')">Tab 2</button>
+    <button onclick="showTab('tab3')">Tab 3</button>
+</div>
+
 <div id="tab1">
     <h3>Simple Calculator</h3>
     <div id="calculator">
-        <input type="text" id="display" readonly>
-        <br>
-        <button onclick="appendToDisplay('1')">1</button>
-        <button onclick="appendToDisplay('2')">2</button>
-        <button onclick="appendToDisplay('3')">3</button>
-        <button onclick="appendToDisplay('+')">+</button>
-        <br>
-        <button onclick="appendToDisplay('4')">4</button>
-        <button onclick="appendToDisplay('5')">5</button>
-        <button onclick="appendToDisplay('6')">6</button>
-        <button onclick="appendToDisplay('-')">-</button>
-        <br>
-        <button onclick="appendToDisplay('7')">7</button>
-        <button onclick="appendToDisplay('8')">8</button>
-        <button onclick="appendToDisplay('9')">9</button>
-        <button onclick="appendToDisplay('*')">*</button>
-        <br>
-        <button onclick="appendToDisplay('0')">0</button>
-        <button onclick="clearDisplay()">C</button>
-        <button onclick="calculateResult()">=</button>
-        <button onclick="appendToDisplay('/')">/</button>
-      
+        <!-- Calculator content goes here -->
     </div>
 </div>
 
 <div id="tab2">
     <h3>Advanced Functions</h3>
-    <p>This is the content of tab 2 with advanced functions.</p>
     <div id="calculator2">
-        <input type="text" id="display" readonly>
-        <br>
-        <button onclick="appendToDisplay('1')">1</button>
-        <button onclick="appendToDisplay('2')">2</button>
-        <button onclick="appendToDisplay('3')">3</button>
-        <button onclick="appendToDisplay('+')">+</button>
-        <br>
-        <button onclick="appendToDisplay('4')">4</button>
-        <button onclick="appendToDisplay('5')">5</button>
-        <button onclick="appendToDisplay('6')">6</button>
-        <button onclick="appendToDisplay('-')">-</button>
-        <br>
-        <button onclick="appendToDisplay('7')">7</button>
-        <button onclick="appendToDisplay('8')">8</button>
-        <button onclick="appendToDisplay('9')">9</button>
-        <button onclick="appendToDisplay('*')">*</button>
-        <br>
-        <button onclick="appendToDisplay('0')">0</button>
-        <button onclick="clearDisplay()">C</button>
-        <button onclick="calculateResult()">=</button>
-        <button onclick="appendToDisplay('/')">/</button>
-      
+        <!-- Advanced calculator content goes here -->
     </div>
     <button onclick="euclid()">Euk</button>
-
 </div>
 
 <div id="tab3">
     <h3>Login Page</h3>
     <div id="login-container">
-        <h2>Login</h2>
-        <form id="login-form">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-    
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-    
-            <button type="submit">Login</button>
-        </form>
+        <!-- Login form goes here -->
     </div>
-   
 </div>
 
-<div class="tabs">
-    <button onclick="showTab('tab1')">Tab 1</button>
-    <button onclick="showTab('tab2')">Tab 2</button>
-    <button onclick="showTab('tab3')">Tab 3</button>
-  </div>
-  
-  <div id="tab1" class="tab-content">
+<div class="tab-content" id="tab1-content">
     <h2>Tab 1 Content</h2>
     <p>This is the content for Tab 1.</p>
-  </div>
-  
-  <div id="tab2" class="tab-content">
+</div>
+
+<div class="tab-content" id="tab2-content">
     <h2>Tab 2 Content</h2>
     <p>This is the content for Tab 2.</p>
-  </div>
-  
-  <div id="tab3" class="tab-content">
+</div>
+
+<div class="tab-content" id="tab3-content">
     <h2>Tab 3 Content</h2>
     <p>This is the content for Tab 3.</p>
-  </div>
+</div>
+
 </body>
 </html>
