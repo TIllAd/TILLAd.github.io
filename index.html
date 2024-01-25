@@ -15,10 +15,10 @@
             <button onclick="showPanel(0,'#aaaaaa')">Tab 1</button>
             <button onclick="showPanel(1,'#aaaaaa')">Tab 2</button>
             <button onclick="showPanel(2,'#aaaaaa')">Tab 3</button>
-            <button onclick="showPanel(3,'#aaaaaa')">Tab 4</button>
+            <button onclick="showPanel(3,'#aaaaaa')">Login</button>
         </div>
 
-        <div class="tabPanel">           
+        <div class="tabPanel">
             <h3>Simple Calculator</h3>
             <div id="calculator">
                 <input type="text" id="display" readonly>
@@ -48,14 +48,30 @@
         <div class="tabPanel">
 
             <h3>Advanced functions</h3>
-        <div id="advanced functions">
-          
-            <button onclick="euclid()">Euclid</button>
+            <div id="advanced functions">
+
+                <button onclick="euclid()">Euclid</button>
+            </div>
         </div>
-    </div>
 
         <div class="tabPanel">Tab 3:Content</div>
-        <div class="tabPanel">Tab 4:Content</div>
+        <div class="tabPanel">
+            
+            <form action="#" method="post" id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" placeholder="usrname" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" placeholder="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+
     </div>
 
 
