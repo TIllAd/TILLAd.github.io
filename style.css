@@ -51,3 +51,13 @@ button {
 button:hover {
     background-color: #e0e0e0;
 }
+
+ /* Initially hide all tab content */
+ #tab1, #tab2, #tab3 {
+    display: none;
+}
+
+/* Display only the selected tab content */
+:target {
+    display: block;
+}
