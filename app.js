@@ -14,7 +14,7 @@ function showPanel(panelIndex,colorCode) {
     tabPanels[panelIndex].style.display="block";
     tabPanels[panelIndex].style.backgroundColor=colorCode;
 }
-showPanel(0,'#f44336');
+showPanel(0,'#aaaaaa');
 
 function appendToDisplay(value) {
     document.getElementById('display').value += value;
@@ -38,11 +38,6 @@ function euclid() {
     var num2 = parseInt(prompt("Enter the second number:"));
     
     if (isNaN(num1)) {
-        alert("Invalid input for the first number. Please enter a valid number.");
-        return;
-    }
-    
-    if (isNaN(num2)) {
         alert("Invalid input for the first number. Please enter a valid number.");
         return;
     }
