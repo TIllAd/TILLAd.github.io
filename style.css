@@ -52,17 +52,6 @@ button:hover {
     background-color: #e0e0e0;
 }
 
-/* Initially hide all tab content except the first tab */
-#tab1, #tab2, #tab3 {
+.tab-content {
     display: none;
-}
-
-/* Display only the selected tab content */
-:target {
-    display: block;
-}
-
-/* Display the first tab content by default */
-#tab1:target {
-    display: block;
 }
