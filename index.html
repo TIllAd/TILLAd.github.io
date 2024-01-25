@@ -9,7 +9,7 @@
 
 
 <body style="padding: 20px">
-    <h1 class="title">Tabs</h1>
+    <h1 class="title">Tabs24</h1>
     <div class="tabContainer">
         <div class="buttonContainer">
             <button onclick="showPanel(0,'#f44336')">Tab 1</button>
@@ -17,7 +17,8 @@
             <button onclick="showPanel(2,'#2196f3')">Tab 3</button>
             <button onclick="showPanel(3,'#ff5722')">Tab 4</button>
         </div>
-        <div class="tabPanel">
+
+        <div class="tabPanel">           
             <h3>Simple Calculator</h3>
             <div id="calculator">
                 <input type="text" id="display" readonly>
@@ -42,20 +43,24 @@
                 <button onclick="calculateResult()">=</button>
                 <button onclick="appendToDisplay('/')">/</button>
             </div>
-
-
-
-
-
-
-
-            <div class="tabPanel">Tab 2:Content</div>
-            <div class="tabPanel">Tab 3:Content</div>
-            <div class="tabPanel">Tab 4:Content</div>
-
-
         </div>
-        <script src="app.js"></script>
+
+        <div class="tabPanel">Tab 2:Content
+
+            <h3>Advanced functions</h3>
+        <div id="advanced functions">
+          
+            <button onclick="euclid()">Euclid</button>
+        </div>
+    </div>
+
+        <div class="tabPanel">Tab 3:Content</div>
+        <div class="tabPanel">Tab 4:Content</div>
+    </div>
+
+
+
+    <script src="app.js"></script>
 </body>
 
 </html>
